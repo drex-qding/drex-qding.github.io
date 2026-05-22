@@ -14,7 +14,7 @@ const content = {
     title: '文字 镜头 与声音的交织',
     subtitle: '用多媒介的叙事，为内容注入活力。',
     categories: [
-      { title: '视频剪辑', desc: '工业级后期制作与直播统筹' },
+      { title: '视频剪辑', desc: '后期制作与直播统筹' },
       { title: '海报设计', desc: '中英双语创意视觉传达' },
       { title: '公众号运营', desc: '国际组织双语内容策划' },
       { title: '摄影作品', desc: '光影叙事与色彩美学' },
