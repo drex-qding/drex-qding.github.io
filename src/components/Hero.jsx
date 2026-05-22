@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import { useContent } from '../context/ContentContext'
 
 const categoryAssets = [
-  { bg: '/assets/海报作品/截屏2026-05-22 11.22.19.png', gradient: 'from-blue-950/90 via-blue-900/70 to-transparent' },
-  { bg: '/assets/海报作品/1.jpg', gradient: 'from-purple-950/90 via-purple-900/70 to-transparent' },
-  { bg: '/assets/公众号截图/a8b3b3db6b95cea7c1b341443f8a04ad.png', gradient: 'from-emerald-950/90 via-emerald-900/70 to-transparent' },
-  { bg: '/assets/摄影作品/15.jpg', gradient: 'from-amber-950/90 via-amber-900/70 to-transparent' },
+  { bg: '/assets/海报作品/截屏2026-05-22 11.22.19.webp', gradient: 'from-blue-950/90 via-blue-900/70 to-transparent' },
+  { bg: '/assets/海报作品/1.webp', gradient: 'from-purple-950/90 via-purple-900/70 to-transparent' },
+  { bg: '/assets/公众号截图/a8b3b3db6b95cea7c1b341443f8a04ad.webp', gradient: 'from-emerald-950/90 via-emerald-900/70 to-transparent' },
+  { bg: '/assets/摄影作品/15.webp', gradient: 'from-amber-950/90 via-amber-900/70 to-transparent' },
 ]
 
 const containerVariants = {

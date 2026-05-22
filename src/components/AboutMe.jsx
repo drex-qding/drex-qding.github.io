@@ -71,7 +71,7 @@ export default function AboutMe() {
             >
               <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden bg-apple-light ring-2 ring-black/5">
                 <img
-                  src="/assets/头像/证件照.jpg"
+                  src="/assets/头像/证件照.webp"
                   alt={content.about.name}
                   className="w-full h-full object-cover"
                 />

@@ -10,10 +10,10 @@ const projectBvids = [
 ]
 
 const projectCovers = [
-  '/assets/covers/cover-1.jpg',
-  '/assets/covers/cover-2.jpg',
-  '/assets/covers/cover-3.jpg',
-  '/assets/covers/cover-4.jpg',
+  '/assets/covers/cover-1.webp',
+  '/assets/covers/cover-2.webp',
+  '/assets/covers/cover-3.webp',
+  '/assets/covers/cover-4.webp',
 ]
 
 function BilibiliLightbox({ bvid, onClose }) {

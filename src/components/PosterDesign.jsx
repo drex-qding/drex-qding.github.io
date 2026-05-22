@@ -2,24 +2,24 @@ import { motion } from 'framer-motion'
 import { useContent } from '../context/ContentContext'
 
 const portraitPosters = [
-  '/assets/海报作品/1.jpg',
-  '/assets/海报作品/3.jpg',
-  '/assets/海报作品/4.jpg',
-  '/assets/海报作品/脱口秀.png',
+  '/assets/海报作品/1.webp',
+  '/assets/海报作品/3.webp',
+  '/assets/海报作品/4.webp',
+  '/assets/海报作品/脱口秀.webp',
 ]
 
 const landscapeScreenshots = [
-  '/assets/海报作品/截屏2026-05-22 11.12.27.png',
-  '/assets/海报作品/截屏2026-05-22 11.13.01.png',
+  '/assets/海报作品/截屏2026-05-22 11.12.27.webp',
+  '/assets/海报作品/截屏2026-05-22 11.13.01.webp',
 ]
 
 const squareScreenshots = [
-  '/assets/海报作品/截屏2026-05-22 11.22.19.png',
-  '/assets/海报作品/截屏2026-05-22 11.22.39.png',
-  '/assets/海报作品/截屏2026-05-22 11.23.09.png',
-  '/assets/海报作品/截屏2026-05-22 11.24.04.png',
-  '/assets/海报作品/截屏2026-05-22 11.24.20.png',
-  '/assets/海报作品/截屏2026-05-22 14.37.23.png',
+  '/assets/海报作品/截屏2026-05-22 11.22.19.webp',
+  '/assets/海报作品/截屏2026-05-22 11.22.39.webp',
+  '/assets/海报作品/截屏2026-05-22 11.23.09.webp',
+  '/assets/海报作品/截屏2026-05-22 11.24.04.webp',
+  '/assets/海报作品/截屏2026-05-22 11.24.20.webp',
+  '/assets/海报作品/截屏2026-05-22 14.37.23.webp',
 ]
 
 function PosterGrid({ images, aspectClass }) {

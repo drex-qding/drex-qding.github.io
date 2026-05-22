@@ -3,9 +3,9 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { useContent } from '../context/ContentContext'
 
 const phoneCardImages = [
-  '/assets/公众号截图/5cfef8c3b1157a0cc08574a3aae11ff6.jpg',
-  '/assets/公众号截图/b3fe51e5b579672485a27939503aedd1.jpg',
-  '/assets/公众号截图/95567b52f26bb5f98489858b29864dbc.png',
+  '/assets/公众号截图/5cfef8c3b1157a0cc08574a3aae11ff6.webp',
+  '/assets/公众号截图/b3fe51e5b579672485a27939503aedd1.webp',
+  '/assets/公众号截图/95567b52f26bb5f98489858b29864dbc.webp',
 ]
 
 function IPhoneMockup({ scrollProgress, phoneCards }) {
