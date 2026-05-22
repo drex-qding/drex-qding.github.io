@@ -3,16 +3,16 @@ import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import { useContent } from '../context/ContentContext'
 
 const projectBvids = [
-  'BV1jYGt6BENm', // 线上教学视频制作
-  'BV1RvGt6KE2m', // 世界青年日采访视频—UNFPA
   'BV1iYGt6qELx', // 一座塔的前世今生
+  'BV1RvGt6KE2m', // 世界青年日采访视频—UNFPA
+  'BV1jYGt6BENm', // 线上教学视频制作
   'BV1LYGt6BEa4', // Vlog
 ]
 
 const projectCovers = [
-  '/assets/covers/cover-3.webp',
-  '/assets/covers/cover-2.webp',
   '/assets/covers/cover-1.webp',
+  '/assets/covers/cover-2.webp',
+  '/assets/covers/cover-3.webp',
   '/assets/covers/cover-4.webp',
 ]
 
