@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useState } from 'react'
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import { useContent } from '../context/ContentContext'
 
@@ -9,44 +9,12 @@ const projectBvids = [
   'BV1LYGt6BEa4', // Vlog
 ]
 
-const bilibiliCoverCache = {}
-
-function BilibiliCover({ bvid }) {
-  const [cover, setCover] = useState(null)
-
-  useEffect(() => {
-    if (bilibiliCoverCache[bvid]) {
-      setCover(bilibiliCoverCache[bvid])
-      return
-    }
-    let cancelled = false
-    fetch(`https://api.bilibili.com/x/web-interface/view?bvid=${bvid}`)
-      .then(r => r.json())
-      .then(d => {
-        if (cancelled) return
-        const url = d.data?.pic
-        if (url) {
-          bilibiliCoverCache[bvid] = url
-          setCover(url)
-        }
-      })
-      .catch(() => {})
-    return () => { cancelled = true }
-  }, [bvid])
-
-  if (cover) {
-    return <img src={cover} alt="" className="w-full h-full object-cover" />
-  }
-
-  return (
-    <div className="w-full h-full flex items-center justify-center bg-black/60">
-      <svg className="w-10 h-10 text-white/30" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    </div>
-  )
-}
+const projectCovers = [
+  '/assets/covers/cover-1.jpg',
+  '/assets/covers/cover-2.jpg',
+  '/assets/covers/cover-3.jpg',
+  '/assets/covers/cover-4.jpg',
+]
 
 function BilibiliLightbox({ bvid, onClose }) {
   return (
@@ -132,7 +100,7 @@ export default function VideoPortfolio() {
                   onClick={() => setLightboxBvid(projectBvids[idx])}
                 >
                   <div className="relative aspect-video rounded-xl md:rounded-2xl overflow-hidden bg-black mb-5">
-                    <BilibiliCover bvid={projectBvids[idx]} />
+                    <img src={projectCovers[idx]} alt={project.title} className="w-full h-full object-cover" />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-white/30 transition-all duration-500 group-hover:scale-110">
                         <svg className="w-5 h-5 md:w-6 md:h-6 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
