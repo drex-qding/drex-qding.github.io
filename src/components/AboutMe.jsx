@@ -73,6 +73,7 @@ export default function AboutMe() {
                 <img
                   src="/assets/头像/证件照.webp"
                   alt={content.about.name}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
